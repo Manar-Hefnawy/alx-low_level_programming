@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point
- * Description: a C program that uses  prinf() function to  print the inputed string formatted
- * return: always 0 (success)
+ * Description: a C program that  prints the inputed string formatted
+ * Return: always 0 (success)
  */
 
 int main(void)
