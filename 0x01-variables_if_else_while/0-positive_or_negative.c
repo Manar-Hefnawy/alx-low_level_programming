@@ -1,15 +1,14 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
-
 /**
- * main - Entry point
+ *  main - Entry point
  *
- * Description: c program that  assign a random number to the variable n 
- * each time it is executed and  print whether the number stored in the variable n
- *  is positive, negative or zero.
+ *  Description: c program that assigns a random number to the variable n 
+ *  each time it is executed and prints whether the number stored 
+ *  in the variable n is positive, negative or zero.
  *
- * Return: always 0 (success)
- */
+ *  Return: 0
+ *   */
 
 int main(void)
 {
@@ -19,11 +18,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n>0){
 		printf("%d is positive", n)
-	}else if (n<0){
+	} else if (n<0){
 		printf("%d is negative", n)
-	}else{
-		printf("%d is 0", n)
-	}
+	} else {
+		printf("%d is zero", n)
+	};
 
 	return (0);
 }
