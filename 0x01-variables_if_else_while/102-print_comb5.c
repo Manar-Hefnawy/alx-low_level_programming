@@ -9,20 +9,20 @@
 
 int main(void)
 {
-	int n1, n2;
-	for (n1 = 0; n1 < 100; n1++)
+	int i, d;
+	for (i = 0; i < 100; i++)
 	{
-		for (n2 = 0; n2 < 100; n1++)
+		for (d = 0; d < 100; d++)
 		{
-			if (n1 < n2)
+			if (i < d)
 			{
-				putchar(( n1 / 10) + '0');
-				putchar(( n1 % 10) + '0');
+				putchar(( i / 10) + '0');
+				putchar(( i % 10) + '0');
 				putchar(' ');
-				putchar(( n2 / 10) + '0');
-				putchar(( n2 % 10) + '0');
+				putchar(( d / 10) + '0');
+				putchar(( d % 10) + '0');
 
-				if (n1 != 98 && n2 != 99)
+				if (i != 98 || d != 99)
 				{
 					putchar(',');
 					putchar(' ');
