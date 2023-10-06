@@ -12,7 +12,7 @@ int main(void)
 	int n1, n2;
 	for (n1 = 0; n1 < 100; n1++)
 	{
-		for (n2 = n1 +1; n2 < 100; n1++)
+		for (n2 = 0; n2 < 100; n1++)
 		{
 			if (n1 < n2)
 			{
@@ -22,10 +22,11 @@ int main(void)
 				putchar(( n2 / 10) + '0');
 				putchar(( n2 % 10) + '0');
 
-				if (n1 == 98 && n2 == 99)
-					continue;
-				putchar(',');
-				putchar(' ');
+				if (n1 != 98 && n2 != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
