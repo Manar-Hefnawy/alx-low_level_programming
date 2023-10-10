@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * Description: C program that prints the alphabet,
- * in lowercase, followed by a new line.
- * Prototype: void print_alphabet(void);
- * You can only use _putchar twice in your code
+ * print_alphabet - use the _putchar function to print 
+ * alphabet letters in lowercase
  */
+
 void print_alphabet(void)
 {
 	char c;
