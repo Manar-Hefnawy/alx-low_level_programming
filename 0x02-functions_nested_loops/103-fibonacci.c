@@ -10,13 +10,22 @@
 
 int main(void)
 {
-	unsigned long i = 0, j = 2, sum;
+	unsigned long i = 0, j = 1, sub_sum;
+	int sum;
 
-	for (; j <= 4000000; j = sum)
+	while (1)
 	{
-		sum = i + j;
+		sub_sum = i + j;
+		if (sub_sum > 4000000)
+			break;
+
+		if ((sub_sum % 2) == 0)
+			sum += sub_sum;
+
 		i = j;
+		j = sub_sum;
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
+
 	return (0);
 }
