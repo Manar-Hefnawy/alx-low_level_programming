@@ -8,9 +8,10 @@
  * Return: 0 success
  */
 
-unsigned int main(void)
+int main(void)
 {
-	int i = 1, j = 2, t = 0, sum;
+	int t = 0;
+	unsigned int i = 1, j = 2, sum;
 
 	for (; t < 50; t++)
 	{
