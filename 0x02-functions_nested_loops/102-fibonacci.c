@@ -23,4 +23,5 @@ unsigned int main()
 		j = sum;
 	}
 	printf("\n");
+	return (0);
 }
