@@ -8,7 +8,7 @@
  * Return: 0 success
  */
 
-unsigned int main()
+unsigned int main(void)
 {
 	int i = 1, j = 2, t = 0, sum;
 
