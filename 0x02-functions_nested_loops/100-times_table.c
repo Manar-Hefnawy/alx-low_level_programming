@@ -17,23 +17,23 @@ void print_times_table(int n)
 			_putchar(48);
 			for (j = 1; j <= n; j++)
 			{
-				_putchar(',');
-				_putchar('.');
+				_putchar(' ');
+				_putchar(' ');
 				prod = i * j;
 				if (prod <= 9)
 				{
-					_putchar('.');
-					_putchar('.');
+					_putchar(' ');
+					_putchar(' ');
 				} else if (prod <= 99)
 				{
-					_putchar('.');
+					_putchar(' ');
 					_putchar((prod / 10) + 48);
 				}else
 				{
 					_putchar((prod / 100) + 48);
 					_putchar((prod / 10 % 10) + 48);
 				}
-				_putchar((i * j % 10) + 48);
+				_putchar((prod % 10) + 48);
 			}
 			_putchar('\n');
 		}
