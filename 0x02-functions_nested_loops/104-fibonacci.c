@@ -7,19 +7,19 @@
  *
  * Return: 0 success
  */
- 
+
 int main(void)
 {
 	int t = 0;
-	unsigned long i = 1, j = 2, sum;
+	unsigned long long i = 1, j = 2, sum;
 
-	printf("%lu, ", i);
-	printf("%lu, ", j);
+	printf("%llu, ", i);
+	printf("%llu, ", j);
 
 	for (; t < 96; t++)
 	{
 		sum = i + j;
-		printf("%lu", sum);
+		printf("%llu", sum);
 		if (t == 95)
 			continue;
 		printf(", ");
