@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line: a function that draws straight line in the terminal
+ * print_line - a function that draws straight line in the terminal
  *
  * @n: number of time _ is printed
  */
@@ -10,13 +10,15 @@ void print_line(int n)
 {
 	int i;
 
-	for (; i <= n; i++)
+	if (n > 0)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-			break;
-		}
-		_putchar('_');
+		for (i = 0; i < n; i++)
+			_putchar('_');
+
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
