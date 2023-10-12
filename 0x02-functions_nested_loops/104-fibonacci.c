@@ -11,15 +11,15 @@
 int main(void)
 {
 	int t = 0;
-	unsigned long long i = 1, j = 2, sum;
+	unsigned long i = 1, j = 2, sum;
 
-	printf("%llu, ", i);
-	printf("%llu, ", j);
+	printf("%lu, ", i);
+	printf("%lu, ", j);
 
 	for (; t < 96; t++)
 	{
 		sum = i + j;
-		printf("%llu", sum);
+		printf("%lu", sum);
 		if (t == 95)
 			continue;
 		printf(", ");
