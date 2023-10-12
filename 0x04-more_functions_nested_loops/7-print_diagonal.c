@@ -6,13 +6,13 @@
  * @n: the number of times the character \ should be printed
  */
 
-void print_diagonal(int size)
+void print_diagonal(int n)
 {
 	int i, j;
 
-	if (size > 0)
+	if (n > 0)
 	{
-		for (i = 1; i < size; i++)
+		for (i = 1; i <= n; i++)
 		{
 			for (j = 1; j < i; j++)
 			{
