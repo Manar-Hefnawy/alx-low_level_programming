@@ -8,13 +8,13 @@
 
 void _puts(char *str)
 {
-	char *ptr = str;
+	char *ptr = str, *i;
 
 	while (*ptr)
 		ptr++;
 
-	for (char *i = str; i <= ptr; i++)
-		_putchr(*i);
+	for (i = str; i <= ptr; i++)
+		_putchar(*i);
 
 	_putchar('\n');
 }
