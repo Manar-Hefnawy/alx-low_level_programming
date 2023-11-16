@@ -20,12 +20,12 @@ int _sqrt_wrapper(int n, int min, int max)
 	if (sqrd_guess == n)
 		return (guess);
 	else if (sqrd_guess < n)
-		_sqrt_wrapper(n, guess + 1, max);
+		return (_sqrt_wrapper(n, guess + 1, max));
 	else
-		_sqrt_wrapper(n, min, guess - 1);
+		return (_sqrt_wrapper(n, min, guess - 1));
 }
 
 int _sqrt_recursion(int n)
 {
-	_sqrt_wrapper(n, 1, n);
+	return (_sqrt_wrapper(n, 1, n));
 }
