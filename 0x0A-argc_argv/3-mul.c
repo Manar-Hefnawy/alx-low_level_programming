@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		result = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", result);
-	} else if (argc == 1)
+	} else if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
